@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>实验室设备资产导航</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body { font-family: 'Inter', system-ui, sans-serif; background-color: #F8FAFC; color: #1E293B; }
+    </style>
+</head>
+<body class="bg-slate-50 min-h-screen flex flex-col items-center py-12 px-4">
+
+    <div class="max-w-md w-full space-y-8">
+        <div class="text-center">
+            <h1 class="text-3xl font-extrabold text-slate-900 tracking-tight">实验室设备资产库</h1>
+            <p class="mt-2 text-slate-500">Lab Equipment Asset Hub</p>
+            <div class="mt-4 inline-block bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full font-mono">
+                Admin: 刘羽鲲
+            </div>
+        </div>
+
+        <div class="space-y-4">
+            <!-- Form 4 -->
+            <a href="form4.html" class="block group relative bg-white p-6 rounded-xl shadow-sm border border-slate-200 hover:shadow-md hover:border-cyan-400 transition-all">
+                <div class="flex items-center justify-between">
+                    <div>
+                        <span class="text-xs font-bold text-cyan-600 uppercase tracking-wider">3D Printer</span>
+                        <h3 class="text-lg font-bold text-slate-900 group-hover:text-cyan-600 transition-colors">Formlabs Form 4</h3>
+                    </div>
+                    <span class="text-2xl">🖨️</span>
+                </div>
+            </a>
+
+            <!-- DHO924S -->
+            <a href="dho924s.html" class="block group relative bg-white p-6 rounded-xl shadow-sm border border-slate-200 hover:shadow-md hover:border-blue-400 transition-all">
+                <div class="flex items-center justify-between">
+                    <div>
+                        <span class="text-xs font-bold text-blue-600 uppercase tracking-wider">Oscilloscope</span>
+                        <h3 class="text-lg font-bold text-slate-900 group-hover:text-blue-600 transition-colors">Rigol DHO924S</h3>
+                    </div>
+                    <span class="text-2xl">📈</span>
+                </div>
+            </a>
+
+            <!-- DG922 Pro -->
+            <a href="dg922pro.html" class="block group relative bg-white p-6 rounded-xl shadow-sm border border-slate-200 hover:shadow-md hover:border-indigo-400 transition-all">
+                <div class="flex items-center justify-between">
+                    <div>
+                        <span class="text-xs font-bold text-indigo-600 uppercase tracking-wider">Signal Gen</span>
+                        <h3 class="text-lg font-bold text-slate-900 group-hover:text-indigo-600 transition-colors">Rigol DG922 Pro</h3>
+                    </div>
+                    <span class="text-2xl">〰️</span>
+                </div>
+            </a>
+
+            <!-- DP932U -->
+            <a href="dp932u.html" class="block group relative bg-white p-6 rounded-xl shadow-sm border border-slate-200 hover:shadow-md hover:border-amber-400 transition-all">
+                <div class="flex items-center justify-between">
+                    <div>
+                        <span class="text-xs font-bold text-amber-600 uppercase tracking-wider">Power Supply</span>
+                        <h3 class="text-lg font-bold text-slate-900 group-hover:text-amber-600 transition-colors">Rigol DP932U</h3>
+                    </div>
+                    <span class="text-2xl">🔋</span>
+                </div>
+            </a>
+        </div>
+
+        <footer class="text-center text-slate-400 text-xs mt-12">
+            <p>Scan QR code on device for specific details.</p>
+        </footer>
+    </div>
+
+</body>
+</html>
