@@ -32,23 +32,10 @@
         }
     </style>
 </head>
-<body class="p-8">
-
-    <!-- 操作栏 (打印时隐藏) -->
-    <div class="max-w-4xl mx-auto mb-8 flex justify-between items-center no-print bg-white p-4 rounded-lg shadow-sm">
-        <div>
-            <h1 class="text-xl font-bold text-slate-800">设备采购管理卡</h1>
-            <p class="text-sm text-slate-500">A4 纸排版，包含 4 台设备</p>
-            <p class="text-xs text-red-500 mt-1">* 请确保二维码图片 (form4_qr.png 等) 已放入同一文件夹</p>
-        </div>
-        <button onclick="window.print()" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-6 rounded-lg transition-colors flex items-center gap-2">
-            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"></path></svg>
-            打印标签
-        </button>
-    </div>
+<body class="p-8 flex flex-col items-center">
 
     <!-- A4 纸容器 -->
-    <div class="max-w-[210mm] mx-auto bg-white p-8 shadow-2xl min-h-[297mm] grid grid-cols-2 gap-6 content-start">
+    <div class="max-w-[210mm] w-full bg-white p-8 shadow-2xl min-h-[297mm] grid grid-cols-2 gap-6 content-start">
         
         <!-- 卡片 1: Form 4 -->
         <div class="card rounded-xl p-6 page-break shadow-sm break-inside-avoid">
@@ -206,6 +193,19 @@
             </div>
         </div>
 
+    </div>
+
+    <!-- 操作栏 (打印时隐藏) -->
+    <div class="max-w-4xl w-full mx-auto mt-8 flex justify-between items-center no-print bg-white p-4 rounded-lg shadow-sm border border-slate-200">
+        <div>
+            <h1 class="text-xl font-bold text-slate-800">设备采购管理卡</h1>
+            <p class="text-sm text-slate-500">A4 纸排版，包含 4 台设备</p>
+            <p class="text-xs text-red-500 mt-1">* 请确保二维码图片 (form4_qr.png 等) 已放入同一文件夹</p>
+        </div>
+        <button onclick="window.print()" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-6 rounded-lg transition-colors flex items-center gap-2 shadow-md">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"></path></svg>
+            打印标签
+        </button>
     </div>
 
 </body>
